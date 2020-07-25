@@ -5,6 +5,7 @@ A toy implementatino of Flamme Rouge to play with AI techniques.
 
 [![Build Status](https://travis-ci.com/afaulconbridge/redflag.svg?branch=master)](https://travis-ci.com/afaulconbridge/redflag)
 [![PyPI version](https://badge.fury.io/py/redflag.svg)](https://badge.fury.io/py/redflag)
+[![Run on Repl.it](https://repl.it/badge/github/afaulconbridge/redflag)](https://repl.it/github/afaulconbridge/redflag)
 
 development
 -----------
