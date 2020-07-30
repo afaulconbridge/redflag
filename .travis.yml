@@ -4,9 +4,12 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install .[dev]
-script:
+  - pre-commit install
+before_script:
   - pipdeptree
+  - pre-commit run --all-files
+script:
   - pytest tests/ -s --cov --cov-report xml:test-reports/coverage.xml --junitxml test-reports/pytest/tests.xml
   - coverage report -m
   - bash <(curl -s https://codecov.io/bash)
-  #- mypy s3seek
+  #- mypy redflag
