@@ -1,6 +1,9 @@
 import argparse
 import logging
 import logging.config
+from random import Random
+
+from .game import Game
 
 
 def main():
@@ -33,13 +36,14 @@ def main():
     if args.log_config:
         logging.config.fileConfig(args.log_config)
 
-    # TODO update
     logger = logging.getLogger("redflag")
 
     if args.log_config:
         logger.debug("loaded log config from {}".format(args.log_config))
 
-    # TODO finish
+    game = Game(Random(42))
+    print(game.board)
+    print(game.to_display_string())
 
 
 if __name__ == "__main__":

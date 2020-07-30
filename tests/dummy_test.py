@@ -1,4 +1,4 @@
-import redflag
+from redflag.game import Game
 
 
 class TestDummy:
@@ -8,4 +8,4 @@ class TestDummy:
 
 class TestGame:
     def test_game(self):
-        redflag.Game()
+        Game()
