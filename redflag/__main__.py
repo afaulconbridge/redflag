@@ -42,8 +42,8 @@ def main():
         logger.debug("loaded log config from {}".format(args.log_config))
 
     game = Game(Random(42))
-    print(game.board)
-    print(game.to_display_string())
+    for display_string in game.run_and_display():
+        print(display_string)
 
 
 if __name__ == "__main__":
